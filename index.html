@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Overlay</title>
+</head>
+<body>
+	<style type="text/css">
+		body{
+	  			padding: 0;
+	  			font-family: Helvetica, sans-serif;
+	  			font-size: 16px;
+	  			background-color: white;
+			}
+		.container{
+			width: 100%;
+		}
+		.box{
+			position: relative;
+			display: inline-block; 
+	
+		}
+		.image{
+			position: relative;
+		}
+			.image, .overlay{
+					-webkit-transition: all .35s cubic-bezier(.69,-.04,.54,.99);
+    -moz-transition: all .35s cubic-bezier(.69,-.04,.54,.99);
+    transition: all .35s cubic-bezier(.69,-.04,.54,.99);
+
+
+		}
+
+
+
+.box:hover .image {
+	opacity: 0;
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	transform: translateY(100%) 
+}
+		.overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+ 			 width: 100%;
+			transition: .5s ease;
+			-webkit-transform: translateY(-100%);
+			-moz-transform: translateY(-100%);
+			transform: translateY(-100%);
+			opacity:0;
+		}
+
+
+		.box:hover .overlay {
+			opacity:1;
+			-webkit-transform: translateY(0);
+			-moz-transform: translateY(0);
+			transform: translateY(0) 
+		}
+
+		img{
+			width: 100%;
+			max-width: 100%;
+			height:auto;
+		}
+		.base{
+			width:33.33%;
+		}
+	
+	</style>
+
+</body>
+<div class="container">
+	<div class="box  base">
+		<img src="images/SampleJPGImage_50kbmb.jpg" class="image">
+		<img src="images/flower.jpg" class="overlay">
+		
+	</div>
+</div>
+</html>
