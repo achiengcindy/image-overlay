@@ -1,3 +1,3 @@
 # image-overlay
 
-[image overlay](https://achiengcindy.github.io/image-overlay/)
+[View theimage overlay here](https://achiengcindy.github.io/image-overlay/)
